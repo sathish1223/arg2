@@ -11,10 +11,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@latest
 
     - name: Create Pull Request
-      uses: sathish1223/arg2@v2
+      uses: sathish1223/arg2@latest
       with:
         title: "Pull request title"
         body: "Pull request description"
