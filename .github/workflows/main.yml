@@ -3,7 +3,7 @@ name: Create Pull Request
 on:
   push:
     branches:
-      - feature-branch  # Define the source branch here
+      - sathish1223-patch-1  # Define the source branch here
 
 jobs:
   create_pull_request:
