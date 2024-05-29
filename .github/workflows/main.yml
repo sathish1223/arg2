@@ -18,5 +18,5 @@ jobs:
       with:
         title: "Pull request title"
         body: "Pull request description"
-        branch: feature-branch  # Source branch
+        branch: sathish1223-patch-1  # Source branch
         base: main  # Target branch
