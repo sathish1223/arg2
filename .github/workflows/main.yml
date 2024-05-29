@@ -16,7 +16,7 @@ jobs:
 
     - name: Create Pull Request
       id: create-pull-request
-      uses: peter-evans/create-pull-request@v5
+      uses: sathish1223/create-pull-request@v5
       with:
         token: ${{ secrets.GH_PAT }}  # Use the PAT stored in the secret
         commit-message: "Automated Pull Request - ${{ github.sha }}"
