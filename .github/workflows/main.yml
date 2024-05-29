@@ -3,7 +3,7 @@ name: Create Pull Request
 on:
   push:
     branches:
-      - sathish1223-patch-1  # Define the source branch here
+      - feature-branch  # Define the source branch here
 
 jobs:
   create_pull_request:
@@ -11,14 +11,17 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@master  # Specify a specific version tag
-      # Replace v2.5.0 with the desired version tag
+      uses: actions/checkout@v2
+
+    - name: Set up Git
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
     - name: Create Pull Request
-     # uses: sathish1223/arg2@v6  # Specify a specific version tag
-      uses: peter-evans/create-pull-request@v5
-      # Replace v3.0.0 with the desired version tag
+      uses: peter-evans/create-pull-request@v4  # Use the version of the action that exists
       with:
+        token: ${{ secrets.GH_PAT }}  # Use the secret you created
         title: "Pull request title"
         body: "Pull request description"
         branch: sathish1223-patch-1  # Source branch
