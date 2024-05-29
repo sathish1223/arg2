@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@sathish1223-patch-1  # Specify a specific version tag
+      uses: actions/checkout@master  # Specify a specific version tag
       # Replace v2.5.0 with the desired version tag
 
     - name: Create Pull Request
