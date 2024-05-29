@@ -11,11 +11,11 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2  # Specify a specific version tag
+      uses: actions/checkout@v4.3.3  # Specify a specific version tag
       # Replace v2.5.0 with the desired version tag
 
     - name: Create Pull Request
-      uses: sathish1223/arg2@v2  # Specify a specific version tag
+      uses: sathish1223/arg2@v4.3.3  # Specify a specific version tag
       # Replace v3.0.0 with the desired version tag
       with:
         title: "Pull request title"
